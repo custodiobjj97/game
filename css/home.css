@@ -1,0 +1,32 @@
+.home{
+  padding: 120px 12px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+
+.home  h1{
+   color: #fff;
+   font-size: var(--font-title-mb);
+   margin-bottom: var(--margin-bottom);
+}
+.home-bg{
+  height: 70vh;
+  background: url('../img/hero-banner.png') no-repeat center;
+}
+
+
+
+@media (min-width:920px){
+  .home-bg{
+    height: 70vh;
+    background: url('../img/hero-banner-bg.png') no-repeat bottom, 
+    url('../img/hero-banner.png') no-repeat bottom;
+  }
+
+  .home h1{
+    font-size: var(--font-title-des);
+  }
+}

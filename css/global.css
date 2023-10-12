@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background: url('../img/body-bg.jpg') no-repeat center;
+  background-size: cover;
+}
+:root{
+  /*color*/
+  --color-primary:hsl(240 64% 13%);
+  --color-secundary:rgba(0,0,0.5);
+  --color-gradient:linear-gradient(to right bottom, hsl(299, 100%, 52%), hsl(291, 100%, 58%), hsl(283, 100%, 60%), hsl(273, 100%, 62%), hsl(262, 100%, 63%), hsl(242, 100%, 69%), hsl(223, 100%, 62%), hsl(210, 100%, 50%), hsl(203, 100%, 50%), hsl(198, 100%, 50%), hsl(192, 100%, 48%), hsl(185, 90%, 48%));
+
+  /*font-size*/
+  --font-title-mb:2.66rem;
+  --font-p:1.1rem;
+  --font-title-des:3rem;
+  --font-subtitle:1.2rem;
+  --font-card:1.55rem;
+  --font-news-h3:1.44rem;
+  --font-p-small:.70rem;
+  /*margin bottom*/
+  --margin-bottom:1rem;
+}
+
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+ul{
+  list-style: none;
+}
+button{
+  padding: 0px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #555;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-gradient);
+  transition: .4s;
+}
+
+.btn{
+  padding: 1rem 2rem;
+  border-end-start-radius: 5px;
+  border-end-end-radius: 5px;
+  background: var(--color-gradient);
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.btn-card{
+  padding: .90rem 3rem;
+  border-end-start-radius: 5px;
+  border-end-end-radius: 5px;
+  background: var(--color-gradient);
+  color: #fff;
+  font-size: .90rem;
+}
+
+.subtitle{
+  display: inline-block;
+  color: gray;
+  font-size: var(--font-subtitle);
+  margin-bottom: var(--margin-bottom);
+  text-align: center !important;
+}
+
+
+.scroll{
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(-100px,0,0);
+  transition: .9s;
+}
+
+.scroll.visible{
+  opacity: 1;
+  visibility: visible;
+  transform: translate3d(0,0,0);
+}
+
+input{
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  outline: none;
+}
+
+.btn-top{
+  padding: 1.10rem;
+  background:var(--color-gradient);
+  border-radius: 7px;
+  color: #fff;
+  position: fixed;
+  right: 3rem;
+  top: 30rem;
+  z-index: 44444;
+  display: none;
+}
+
+
+
+@media (min-width:920px){
+  .btn{
+    padding: .90rem 4rem;
+  }
+}

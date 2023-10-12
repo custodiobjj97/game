@@ -1,0 +1,19 @@
+/*global*/
+@import "global.css";
+@import "header.css";
+
+/*home*/
+@import "home.css";
+
+
+/*tournament*/
+@import "tournament.css";
+
+/*news*/
+@import "news.css";
+
+@import "footer.css";
+
+/*slide*/
+@import "slide.css";
+
